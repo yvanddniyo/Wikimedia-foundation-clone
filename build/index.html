@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikimedia Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+    <body class="">
+                <!-- header of our page -->
+
+      <div class="flex space-x-[14rem] mx-72 mt-8 medium:mx-2">
+        <div class=" w-[12rem] object-contain medium:ml-24">
+          <img class="w-[200px] h-10" src="wiki pic/logo-horizontal.svg" alt="">
+        </div>
+        <div class="flex space-x-6 mt-2">
+          <div class="border border-cyan-800 py-2 px-3 medium:hidden" >
+            <input class="outline-none"  type="search" name="" id="" placeholder="search here">
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class=" flex medium:justify-center mx-auto">
+            <select class="border border-black py-2 px-3 bg-gray-300 outline-none medium:flex medium:mx-auto" name="" id="">
+              <option  value="">
+                  <a  href=""> 人 EN</a>
+              </option>
+              <option value="">
+                 <a href="">عربي </a>
+              </option>
+              <option value="">
+                <a href="">中国人</a>
+              </option>
+              <option value="">
+                <a href="">Français</a>
+              </option>
+              <option value="">
+                <a href="">Pусский</a>
+              </option>
+              <option value="">
+                <a href=""> Deuatch</a>
+              </option>
+            </select>
+          </div>
+          <div class=" medium:hidden">
+            <button class="border border-none py-2 px-3 bg-red-600  text-white bor">
+              <i class="fa fa-lock px-3"></i>Donate now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mx-72 mr-[32rem] mt-4 medium:mx-6">
+        <hr>
+      </div>
+
+          <!-- our navigation -->
+          <nav class="">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                  <div class="flex-shrink-0">
+                    <a href="#" class="text-white">Logo</a>
+                  </div>
+                  <div class="-mr-2 flex md:hidden justify-start medium:absolute medium:top-[3%] ">
+                    <button id="hamburger" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white  focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out">
+                      <svg class="h-12 w-12 hover:bg-slate-300 " stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="hidden md:block">
+                    <div class=" flex items-baseline space-x-12">
+                      <a href="#" class="tmt-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">Support Wikipedia</a>
+                      <a href="#" class="text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">Research</a>
+                      <a href="#" class="text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">Advocacy</a>
+                      <a href="#" class="text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">Technology</a>
+                      <a href="#" class="text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">News</a>
+                      <a href="#" class="text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">Patricipate</a>
+                      <a href="#" class="text-gray-800 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md text-sm font-medium">About</a>
+                      <!-- Add more menu items here -->
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div id="mobileMenu" class="md:hidden hidden">
+              <div class="px-2 pt-2 pb-3 sm:px-3 bg-slate-300 min-h-screen">
+                
+                <ul>
+                      <div class="border border-cyan-800 py-2 px-3" >
+                        <input class="outline-none bg-slate-300 w-[95%]"  type="search" name="" id="" placeholder="search here">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass float-right"></i>
+                      </div>
+                      <hr class="py-4"> 
+                      <li><a href="#" class="text-gray-800  hover:text-white px-4 py-2 rounded-md text-sm font-medium">Our Work</a> </li> 
+                      <hr class="py-4"> 
+                      <li><a href="#" class="text-gray-800  hover:text-white px-4 py-2 rounded-md text-sm font-medium">Support Wikipedia</a></li>
+                      <hr class="py-4">
+                      <li><a href="#" class="text-gray-800  hover:text-white px-4 py-2 rounded-md text-sm font-medium">Research</a></li>
+                      <hr class="py-4">
+                      <li><a href="#" class="text-gray-800  hover:text-white px-4 py-2 rounded-md text-sm font-medium">Advocacy</a></li>
+                      <hr class="py-4">
+                      <li><a href="#" class="text-gray-800  hover:text-white px-4 py-2 rounded-md text-sm font-medium">Technology</a></li>
+                      <hr class="py-4">
+                      <li><a href="#" class="text-gray-800  hover:text-white px-4 py-2 rounded-md text-sm font-medium">News</a></li>
+                      <hr class="py-4">
+                      <li><a href="#" class="text-gray-800  hover:text-white px-4 py-2 rounded-md text-sm font-medium">Patricipate</a></li>
+                      <hr class="py-4">
+                      <li><a href="#" class="text-gray-800  hover:text-white px-4 py-2 rounded-md text-sm font-medium">About</a></li>
+                      <hr class="py-4">
+                     
+                  </ul>
+                <!-- Add more menu items here -->
+              </div>
+            </div>
+          </nav>
+
+          <!-- inserting image  -->
+
+            <div class="flex my-[3rem] relative">
+              <img class=" w-[100vw] h-[400px] object-contain " src="wiki pic/wiki (11).jpg" alt="">
+              <a class="absolute top-[30%] w-[300px] left-[20%] bg-blue-700 text-white text-2xl font-bold p-4 hover:underline decoration-1 z-[2] border-[3px]" href="">
+                Join us as we celebrate our 20th birthday with a look
+                back to some of the highlights from our history.
+              </a>
+            </div>
+
+            <div class="flex mx-72 space-x-[5rem] medium:flex-col-reverse medium:mx-6">
+              <div class="w-[500px] text-[18px] ">
+                <p>
+                  The nonprofit Wikimedia Foundation provides the essential infrastructure
+                   for free knowledge. We host Wikipedia, the free online encyclopedia,
+                   created, edited, and verified by volunteers around the world, as well
+                   as many other vital community projects. All of which is made possible
+                   thanks to donations from individuals like you. We welcome anyone who shares
+                   our vision to join us in collecting and sharing knowledge that fully represents
+                    human diversity.
+                </p>
+              </div>
+              <div class="medium:mx-6">
+                <h1 class="font-bold text-[20px]">
+                  Protect and sustain Wikipedia
+                </h1>
+                <button class=" py-3 border border-none px-3 bg-blue-600  text-white mx-12">
+                  <i class="fa fa-lock px-3"></i>Donate now
+                </button>
+                <p class="font-medium">donation are secure</p>
+              </div>
+            </div>
+            <div class="mx-72 mr-[32rem] mt-4 ">
+              <hr>
+            </div>
+
+            <!-- what we do -->
+
+            <div class="flex mb-[1rem] mt-[2rem] mx-72 medium:mx-6">
+                  <li><a class="px-3 hover:underline decoration-1" href="">English</a></li>
+                  <li><a class="px-3 text-blue-600 hover:underline decoration-1" href="">العربية</a></li>
+                 <li> <a class="px-3 text-blue-600 hover:underline decoration-1" href="">Français</a></li>
+                  <li> <a class="px-3 text-blue-600 hover:underline decoration-1" href="">Русский</a></li>
+                 <li><a class="px-3 text-blue-600 hover:underline decoration-1" href="">Español</a></li>
+                  <li><a class="px-3 text-blue-600 hover:underline decoration-1" href="">Deutsch</a></li>
+              </ul>
+            </div>
+
+            <div class=" flex space-x-3  mx-72 medium:flex medium:flex-col  medium:mx-6">
+              <div class=" mb-[3rem]  medium:w-full">
+                <h1 class="font-[700] text-4xl">1</h1>
+                <h2 class="text-3xl font-[600]">Wikimedia projects belong to everyone</h2>
+                <p>
+                  You made it. It is yours to use. For free. that
+                  <a class="text-blue-600 hover:underline " href="https://en.wikipedia.org/wiki/Wikipedia:Reusing_Wikipedia_content?wprov=wppw2">means</a>
+                  you can use it, adapt it, or share what you find on Wikimedia sites. Just
+                  <a class="text-blue-600 hover:underline " href="https://en.wikipedia.org/wiki/Wikipedia:Conflict_of_interest">do not write your own bio</a>
+                  or copy/paste it into your homework.
+                </p>
+              </div>
+              <div class=" mb-[3rem] medium:w-full">
+                <h1 class="font-[600] text-4xl">2</h1>
+                <h2 class="text-3xl font-[600]">We respect your data and privacy</h2>
+                <p>
+                  We do not sell your email address or any of your personal information to third parties. More information about our privacy practices are available at th
+                  <a class="text-blue-600 hover:underline  " href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">wikimedia Foundation privacy
+                    policy</a>,<a class="text-blue-600 hover:underline " href="https://foundation.wikimedia.org/wiki/Policy:Donor_privacy_policy/en">Donor Privacy policy</a>
+                  and
+                  <a class="text-blue-600 hover:underline " href="https://meta.wikimedia.org/wiki/Data_retention_guidelines">Data retention guildelines </a>
+                  or copy/paste it into your homework.
+                </p>
+              </div>
+              <div class=" mb-[3rem]  medium:w-full">
+                <h1 class="font-[600] text-4xl">3</h1>
+                <h2 class="text-3xl font-[600]">People like you keep Wikipedia accurate</h2>
+                <p>
+                  Reader <a  class="text-blue-600 hover:underline " href="https://en.wikipedia.org/wiki/Wikipedia:Verifiability">verify the facts</a>
+                  Articles are collaboratively created and edited by a community of volunteers using
+                  <a  class="text-blue-600 hover:underline " href="https://en.wikipedia.org/wiki/Wikipedia:Verifiability#What_counts_as_a_reliable_source">Reliable Sources</a>
+                  so no single person or company owns a Wikipedia article. The Wikimedia Foundation does not write or edit, but
+                  <a  class="text-blue-600 hover:underline " href="https://en.wikipedia.org/wiki/Help:Contents">you and everyone you know can help</a>
+                </p>
+              </div>
+              <div class=" mb-[3rem]  medium:w-full">
+                <h1 class="font-[600] text-4xl ">4</h1>
+                <h2 class="text-3xl font-[600]">Not all wikis are Wikimedia</h2>
+                <p>
+                  The word " <a class="text-blue-600 hover:underline " href="https://en.wikipedia.org/wiki/Wiki">wiki</a> "
+                  refers to a website built using collaborative editing
+                   software. Projects with no past or existing affiliation
+                   with Wikipedia or the Wikimedia Foundation, such as
+                   Wikileaks and wikiHow, also use the term. Although these
+                   sites also use “wiki” in their name, they have nothing to
+                   do with Wikimedia.
+                </p>
+              </div>
+            </div>
+
+            <!-- some tweet cards -->
+
+              <div class="flex mx-72 medium:flex-col medium:mx-6 space-x-3 space-y-4 mb-20">
+                <div class="bg-gray-300 p-6 hover:drop-shadow-lg w-[30%] medium:w-full mt-4 rounded" >
+                  <h2 class="font-bold text-3xl ">300,000+</h2>
+                  <p class="font-bold py-3">editors contributes to wikimedia projects every month</p>
+                  <p class="text-blue-700 font-bold">
+                    <i class="fa-brands fa-twitter"></i>
+                    tweet this
+                  </p>
+                </div>
+                <div class="bg-gray-300 p-6  w-[30%] rounded medium:w-full" >
+                  <h2 class="font-bold text-3xl ">90+ million</h2>
+                  <p class="font-bold py-3">media files on wikimedia Commons and counting</p>
+                  <p class="text-blue-700 font-bold">
+                    <i class="fa-brands fa-twitter"></i>
+                    tweet this
+                  </p>
+                </div>
+                <div class="bg-gray-300 p-6  w-[30%] rounded medium:w-full" >
+                  <h2 class="font-bold text-3xl ">1.7+ billion</h2>
+                  <p class="font-bold py-3">unique device access Wikimedia month</p>
+                  <p class="text-blue-700 font-bold">
+                    <i class="fa-brands fa-twitter font-bold"></i>
+                    tweet this
+                  </p>
+                </div>
+              </div>
+
+              <!-- other card of recommendation -->
+
+             <div class="flex  mb-16 space-x-3 space-y-3 medium:flex-col medium:mx-6 mx-72 ">
+              <div class="border border-none hover:shadow-2xl mt-3  w-[30%] h-[37%]  rounded medium:w-full">
+                <img class="w-[400px] h-[250px]" src="wiki pic/wiki (8).jpg" alt="">
+                <a href="#"><h1 class="text-bold text-3xl p-3">Research</h1></a>
+                <p class="w-full p-3 rounded">
+                    <a href="">
+                      We conduct our own research and partner with research
+                      worldwide to address change in society and technology
+                    </a>
+                  <p class="p-3 pt-[37px]">
+                    <a class="text-blue-700 font-bold " href="#">More about research <i class=" fa fa-arrow-right float-right" ></i></a>
+                  </p>
+                </p>
+              </div>
+              <div class="border hover:shadow-2xl  w-[30%] h-full rounded medium:w-full ">
+                <img class="w-[400px] h-[250px]" src="wiki pic/wiki.png" alt="">
+                <a href="#"><h1 class="text-bold text-3xl p-3">Technology</h1></a>
+                <p class="w-full p-3">
+                    <a href="">
+                     From site reliability to machine learning, our open-source
+                     technology makes Wikipedia faster, more reliable, and more
+                     accessible worldwide.
+                    </a> rounded
+                  <p class="p-3">
+                    <a class="text-blue-700 font-bold "  href="#">More about technology<i class=" fa fa-arrow-right float-right" ></i></a>
+                  </p>
+                </p>
+              </div>
+              <div class="border hover:shadow-2xl   w-[30%] h-full  rounded  medium:w-full">
+                <img class="w-[400px] h-[250px]" src="wiki pic/wiki (13).jpg" alt="">
+                <a href="#"><h1 class="text-bold text-3xl p-3">Advocacy</h1></a>
+                <p class="w-full p-3 ">
+                    <a href="">
+                      We fight to preotect everyones's right to access free
+                      and open knowledge.
+                    </a>
+                  <p class="p-3 pt-[60px]">
+                    <a class="text-blue-700 font-bold " href="#">More about advocacy<i class=" fa fa-arrow-right float-right" ></i></a>
+                  </p>
+                </p>
+              </div>
+             </div>
+
+             <!-- see our collaboration  -->
+
+             <div class="flex medium:mx-6 medium:flex-col space-x-3 space-y-3 mx-72 mb-20">
+              <div>
+                <h1 class="font-bold text-2xl">
+                  Collaborative projects are the core of the Wikimedia movement
+                </h1>
+                <p>
+                  Our volunteers build tools, share photos, write articles,
+                   and are working to connect all the knowledge that exists.
+                </p>
+                <p class="py-3">
+                  <a class="text-blue-700 text-2xl" chref="#">See all projects</a>
+                </p>
+              </div>
+              <div class="bg-gray-100 p-4">
+                <img class="w-[20%] flex  mx-auto" src="wiki pic/wiki (1).png" alt="">
+                <h1 class="font-bold text-2xl">
+                  Wikipedia
+                </h1>
+                <p>
+                  Our volunteers build tools, share photos, write articles,
+                   and are working to connect all the knowledge that exists.
+                </p>
+                <p class="py-3">
+                  <a class="text-blue-700 text-2xl" chref="#">Visit Wikipedia</a>
+                </p>
+              </div>
+              <div class="bg-gray-100 p-4">
+                <img class="w-[20%] flex  mx-auto" src="wiki pic/wiki (3).png" alt="">
+                <h1 class="font-bold text-2xl">
+                 Wikipedia Commons
+                </h1>
+                <p>
+                  Our volunteers build tools, share photos, write articles,
+                   and are working to connect all the knowledge that exists.
+                </p>
+                <p class="py-3">
+                  <a class="text-blue-700 text-2xl" chref="#">Visit Wikipedia Commons</a>
+                </p>
+              </div>
+             </div>
+
+              <!-- see what we have been to -->
+             <section class="bg-slate-100 mb-20 py-8">
+                  <div class="medium:mx-6 pb-16 mx-72 ">
+                    <h1 class="font-bold text-2xl">See what we have been up to</h1>
+                  </div>
+                  <div class="flex medium:mx-6 medium:flex-col  space-y-3 mx-72 mb-20">
+                    <div>
+                      <h1> <a  class="font-bold text-2xl hover:underline hover:text-blue-600" href="#">20 years of the nonprofit behind Wikipedia</a></h1>
+                      <div class="my-4"  >
+                        <span class="text-blue-600 font-medium pr-4 cursor-pointer bg-slate-300 p-[2px]">Feature</span>
+                        <span class="text-blue-600 font-medium cursor-pointer mb-12 bg-slate-300 p-[2px]">wikimedia Foundation</span>
+                      </div>
+                      <p class="">
+                        Wikipedia is an indispensable part of the internet — no
+                        matter if you’re searching for a fact to win a round of
+                        trivia or doing a deep dive on what’s happening in the
+                        world around you. And today, the nonprofit organization
+                        that supports Wikipedia turns 20 years old. We are the
+                        Wikimedia Foundation. In our….
+                      </p>
+                      <p>20 june 2023</p>
+                      <p>By <span class="text-blue-600 text-[14px]"> Wikimedia Foundation</span></p>
+                      <p>
+                        <a class="text-blue-600 text-2xl font-bold py-12 hover:underline" href="#">Read more <i class="fa fa-arrow-right"></i></a>
+                      </p>
+                    </div>
+                    <div>
+                      <img class="" src="wiki pic/wiki (11).jpg">
+                    </div>
+                  </div>
+
+                  <h1 class="mx-72 medium:mx-6">
+                    <a class="text-blue-600 text-2xl font-bold py-12" href="">Wikimedia Foundation launches Open the Knowledge Journalism Awards on World Press Freedom Day</a>
+                  </h1>
+
+                  <div class="mx-72 my-6 flex flex-col space-y-3 medium:mx-6">
+                    <div class="flex space-x-2">
+                      <h2 class="text-blue-600 bg-slate-300 p-[2px] ">Campains</h2>
+                      <h2 class="text-blue-600 bg-slate-300 p-[2px]">Contests/Awards</h2>
+                    </div>
+                    <div class="flex  space-x-2 medium:flex-col space-y-3">
+                      <h2 class="text-blue-600 bg-slate-300 p-[2px] mt-3">middle East and North Africa</h2>
+                      <h2 class="text-blue-600 bg-slate-300 p-[2px]">Sub-Saharah Africa</h2>
+                    </div>
+                  </div>
+
+                  <div class="mx-72  flex medium:flex-col  medium:mx-6">
+                    <div >
+                      <p class="">
+                        The Wikimedia Foundation is launching the
+                        inaugural Open the Knowledge Journalism Awards.
+                        Coinciding with the 30th anniversary of World Press
+                        Freedom Day, this year’s awards celebrate the contributions
+                        of journalists in Africa who prioritize diversity, equity and
+                        inclusion in their reporting.
+                      </p>
+                      <p>
+                        3 May 2023
+                      </p>
+                      <p>By <span class="text-blue-600 text-[14px]">Wikimedia Foundation</span></p>
+                      <p>
+                        <a class="text-blue-600 text-2xl font-bold py-12 hover:underline" href="#">Read more <i class="fa fa-arrow-right"></i></a>
+                      </p>
+                    </div>
+                    <div>
+                      <img class="w-[400px]" src="wiki pic/wiki.svg" alt="">
+                    </div>
+                  </div>
+            </section>
+
+            <!-- wikimedian horoes section -->
+
+            <h1 class="text-bold text-2xl medium:mx-6 py-4 mx-72 medium:text-[18px] medium:font-bold">Wikimedians are heroes of free knowledge</h1>
+            <div class="mx-72 medium:mx-6 flex space-x-4 space-y-4 flex-wrap mb-20 py-6 px-4  ">
+              <div class="border  mt-4  py-6 px-4 hover:shadow-2xl  medium:w-full medium:text-center" >
+
+                <a href=""><img class="w-[150px] h-[150px] rounded-full  flex mx-auto hover:scale-[1.1]" src="wiki pic/vangari.webp" alt=""></a>
+                  <p class="mt-10"><a class="text-bold" href="#">Pranayraj Vangari</a></p>
+                   <p>Editor since 2013, Wikimedia community</p>
+
+              </div>
+              <div class=" border  py-8 px-4 hover:shadow-2xl  medium:w-full medium:text-center" >
+                <a href=""><img class="w-[150px] h-[150px] rounded-full  flex mx-auto hover:scale-[1.1]"  src="wiki pic/sam_oye.webp" alt=""></a>
+                  <p><a class="text-bold" href="#">Sam Oyeyele</a></p>
+                   <p>Editor since 2011, Wikimedia community</p>
+
+              </div>
+              <div class="border  py-6 px-4 hover:shadow-2xl  medium:w-full medium:text-center" >
+                <a href=""><img class="w-[150px] h-[150px] rounded-full flex mx-auto hover:scale-[1.1]" src="wiki pic/May_Mohamed_Hisham.webp" alt=""></a>
+                  <p><a class="text-bold" href="#">May Hachem</a></p>
+                   <p>Editor since 2013, Wikimedia community</p>
+              </div>
+            </div>
+
+            <div class="mx-72 medium:mx-6  mb-20">
+              <p class="text-center">
+                Throughout history, knowledge has been controlled by a powerful few.
+                <a class="text-blue-700 font-medium hover:underline" href="#">Wikipedia knowledge from all language and culture.</a>
+                The internet has become the default for accessing information—women, people of color,
+                and the global south remain underrepresented.
+                We invite you to help correct history.
+              </p>
+              <button class="bg-blue-700 text-white font-bold hover:underline py-1 px-2 flex mx-auto">
+                Join the movement
+              </button>
+            </div>
+
+
+            <!-- help us to unlock our beautiful word -->
+            <div class="bg-red-200 w-full py-6">
+              <div class=" mx-72 medium:mx-6 flex space-x-12 medium:flex-col ">
+                <div>
+                  <img class="w-[450px]" src="wiki pic/wiki (12).jpg" alt="">
+                </div>
+                <div class="w-[]">
+                  <h1 class="font-bold text-3xl medium:text-sm py-3">
+                    Help us unlock the world’s knowledge.
+                  </h1>
+                  <p class="medium:mx">
+                    As a nonprofit, Wikipedia and our related free knowledge projects
+                    are powered primarily through donations.
+                  </p>
+                  <button class="border border-none py-2 px-3 bg-red-600  text-white my-12">
+                    <i class="fa fa-lock px-3 "></i>Donate now
+                  </button>
+                </div>
+              </div>
+          </div>
+
+
+          <!-- our contact  -->
+
+          <div class="mx-72 medium:mx-6  border  py-4 px-6 my-20" >
+            <div>
+              <i class="fa fa-users text-3xl py-3"></i>
+            </div>
+            <div>
+              <h1 class="font-bold">Contact us</h1>
+              <p>
+                <a href="#">
+                  Question about the Wikipedia Foundation or
+                  our projects? Get in touch with out team.
+                </a>
+              </p>
+              <p class="text-blue-700 font-bold "> Contact <i class="fa fa-arrow-right mx-4 hover:scale-x-50"></i></p>
+            </div>
+            <h2 class="my-4">Follow</h2>
+              <div class="flex space-x-6">
+
+                      <div class="">
+                      <p class="font-bold text-blue-700">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                      </p>
+                      <p class="font-bold text-blue-700">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                      </p>
+                  </div>
+                  <div class="">
+                    <p class="font-bold text-blue-700">
+                      <i class="fa-brands fa-twitter"></i>
+                      Twitter
+                    </p>
+                    <p class="font-bold text-blue-700">
+                      <i class="fa-brands fa-linkedin"></i>
+                      LinkedIn
+                    </p>
+                  </div>
+              </div>
+          </div>
+
+            <!-- footer used to indicate what we do in our business -->
+
+            <footer class="bg-gray-800 py-24">
+              <div class="flex justify-around mx-72 medium:mx-6  medium:flex-col">
+                <div class="text-white">
+                  <img class="w-32 bg-white py-2 px-2 rounded-md" src="wiki pic/logo-horizontal.svg" alt="">
+                  <p class="w-[400px] py-4">
+                    The Wikimedia Foundation, Inc is a nonprofit charitable organization dedicated to encouraging
+                    the growth, development and distribution of free, multilingual content, and to providing the
+                    full content of these wiki-based projects to the public free of charge.
+                    <hr class="mb-6">
+                  </p>
+                </div>
+                <div>
+                  <button  class="bg-white text-blue-600 border-blue-600 hover:underline py-2 px-3">
+                    careers
+                  </button>
+                  <button class="bg-white text-blue-600 border-blue-600 hover:underline py-2 px-3">
+                    Contact
+                  </button>
+                </div>
+              </div>
+
+               <div class="flex text-white mx-72 medium:mx-6 justify-around medium:flex-col">
+                
+                 <div>
+                    <h2 class="font-bold">Projects</h2>
+                    <div class=" flex space-x-6 medium:flex-col">
+                      <div class="flex space-x-24 flex-col">
+                        <ul>
+                          <li>
+                            <a class=" hover:underline" href="">wikipedia</a>
+                          </li>
+                          <li>
+                            <a class=" hover:underline" href="">wikibooks</a>
+                          </li>
+                          <li>
+                            <a class=" hover:underline" href="">wikiversity</a>
+                          </li>
+                          <li>
+                            <a class=" hover:underline" href="">wikinews</a>
+                          </li>
+                        </ul>
+                      </div >
+                      <div class="">
+                        <ul class="">
+                          <li>
+                            <a class=" hover:underline" href="">wiktionary</a>
+                          </li>
+                          <li>
+                            <a class=" hover:underline" href="">wikisource</a>
+                          </li>
+                          <li>
+                            <a class=" hover:underline" href="">wikiquote</a>
+                          </li>
+                          <li>
+                            <a class=" hover:underline" href="">wikivoyage</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <ul>
+                          <li>
+                            <a class=" hover:underline" href="">wikimedia Commmons</a>
+                          </li>
+                          <li>
+                            <a class=" hover:underline" href="">wikidata</a>
+                          </li>
+                          <li>
+                            <a class=" hover:underline" href="">wikispecies</a>
+                          </li>
+                          <li>
+                            <a class=" hover:underline" href="">wikimedia</a>
+                          </li>
+                        </ul>
+                      </div>
+                     </div>
+                 </div>
+                 
+                 <div class="flex space-x-6">
+                   <h2 class="uppercase font-bold">Movement Affliate</h2>
+                   <div class=" space-x-6">
+                    <div >
+                     <ul>
+                       <li>
+                         <a class=" hover:underline" href="">Wikimedia Chapter</a>
+                       </li>
+                       <li>
+                         <a class=" hover:underline" href="">Wikimedia Thematic Organisation</a>
+                       </li>
+                       <li>
+                         <a class=" hover:underline" href="">Wikimedia User Groups</a>
+                       </li>
+                     </ul>
+                   </div>
+                   </div>
+                   <div>
+                     <h2 class="font-bold">OTHER</h2>
+                     <div>
+                      <ul>
+                        <li>
+                          <a class=" hover:underline" href="">Terms of use</a>
+                        </li>
+                        <li>
+                          <a class=" hover:underline" href="">Privacy policy</a>
+                        </li>
+                        <li>
+                          <a class=" hover:underline" href="">Disclaimer</a>
+                        </li>
+                        <li>
+                          <a class=" hover:underline" href="">Accessibility statement</a>
+                        </li>
+                        <li>
+                          <a class=" hover:underline" href="">Cookie statement</a>
+                        </li>
+                      </ul>
+                    </div>
+                   </div>
+                 </div>
+                 </div>
+                 <hr class="mx-72 mt-3 py-4 medium:mx-6">
+                 <div>
+                  <p class="text-white mx-72 medium:mx-6 w-[550px]">
+                    Except where otherwise noted, the content of this site is licensed 
+                    under a Creative Commons Attribution-ShareAlike 4.0 International license.
+                     Powered by WordPress.com VIP. Automattic Privacy Notice.
+                  </p>
+                 </div>
+            </footer>
+            
+          <script src="main.js"></script>
+    </body>
+</html>
